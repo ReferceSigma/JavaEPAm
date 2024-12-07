@@ -14,10 +14,10 @@ public class zadB1 {
         System.out.println();
 
         for (int i = 1; i <= 10; i++) {
-            // Вывод множителя
+
             System.out.printf("%-10d", i);
             for (int j = 1; j <= 10; j++) {
-                // Вывод произведения
+                
                 System.out.printf("%-10d", i * j);
             }
             System.out.println(); // Переход на новую строку после каждого множителя

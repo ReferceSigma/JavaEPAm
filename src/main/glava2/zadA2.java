@@ -15,7 +15,7 @@ public class zadA2 {
         for (int i = 0; i < 3; i++) {
             arr[i] = in.nextLine();
         }
-//сортировка пузырьком:
+
         for (int i = arr.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (arr[j].length() > arr[j + 1].length()) {

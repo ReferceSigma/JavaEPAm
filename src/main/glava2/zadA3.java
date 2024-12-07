@@ -14,7 +14,7 @@ public class zadA3 {
 
         System.out.println("Введите числа (введите 'exit' для завершения ввода):");
 
-        // Чтение чисел
+
         while (true) {
             String input = scan.nextLine();
             if (input.equalsIgnoreCase("exit")) {
@@ -23,14 +23,14 @@ public class zadA3 {
             numbers.add(input);
         }
 
-        // Вычисление средней длины
+
         int totalLength = 0;
         for (String number : numbers) {
             totalLength += number.length();
         }
         double averageLength = (double) totalLength / numbers.size();
 
-        // Вывод чисел с длиной меньше средней
+
         System.out.println("Числа с длиной меньше средней (" + averageLength + "):");
         for (String number : numbers) {
             if (number.length() < averageLength) {
@@ -38,7 +38,7 @@ public class zadA3 {
             }
         }
 
-        // Вывод чисел с длиной больше средней
+
         System.out.println("Числа с длиной больше средней (" + averageLength + "):");
         for (String number : numbers) {
             if (number.length() > averageLength) {

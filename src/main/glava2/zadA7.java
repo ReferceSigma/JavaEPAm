@@ -33,25 +33,25 @@ public class zadA7 {
     private static String findFirstUniqueDigitNumber(String[] numbers) {
         for (String number : numbers) {
             if (hasUniqueDigits(number)) {
-                return number; // Возвращаем первое найденное число
+                return number;
             }
         }
-        return null; // Если не найдено ни одно число
+        return null;
     }
 
     private static boolean hasUniqueDigits(String number) {
-        boolean[] digitSeen = new boolean[10]; // Массив для отслеживания использованных цифр
+        boolean[] digitSeen = new boolean[10];
 
         for (char c : number.toCharArray()) {
             if (!Character.isDigit(c)) {
-                return false; // Если символ не является цифрой, возвращаем false
+                return false;
             }
-            int digit = c - '0'; // Преобразование символа в цифру
+            int digit = c - '0';
             if (digitSeen[digit]) {
-                return false; // Если цифра уже встречалась, возвращаем false
+                return false;
             }
-            digitSeen[digit] = true; // Отмечаем эту цифру как встреченную
+            digitSeen[digit] = true;
         }
-        return true; // Все цифры уникальны
+        return true;
     }
 }
